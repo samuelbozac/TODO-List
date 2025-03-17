@@ -1,0 +1,46 @@
+[tool.black]
+line-length = 100  # Example: Change the maximum line length (default is 88)
+target-version = ['py311'] #Change if you are using other python version
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.venv
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.nox
+  | \.svn
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.poetry]
+name = "crehana"
+version = "0.1.0"
+description = ""
+authors = ["Samuel Boza <samuelsbozac@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.11"
+sqlmodel = "^0.0.24"
+uvicorn = "^0.34.0"
+psycopg2-binary = "^2.9.10"
+pytest = "^8.3.5"
+httpx = "^0.28.1"
+sqlalchemy-utils = "^0.41.2"
+dotenv = "^0.9.9"
+black = "^25.1.0"
+flake8 = "^7.1.2"
+pytest-cov = "^6.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
