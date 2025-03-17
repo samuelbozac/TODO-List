@@ -1,5 +1,5 @@
 [flake8]
-max-line-length = 120  # or 88, as per PEP 8, adjust as needed
+max-line-length = 120
 exclude =
     .git,
     __pycache__,
@@ -7,6 +7,6 @@ exclude =
     venv,
 ignore =
     E203,
-    W503, # This is now allowed
+    W503,
 per-file-ignores =
     __init__.py:F401
